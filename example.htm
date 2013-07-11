@@ -22,7 +22,7 @@
 			
 			<p class="large">
 				Springboard is an extremely lightweight CSS boilerplate that 
-				provides you with simple, nice-looking defaults which are easily 
+				provides you with simple and nice-looking defaults which are easily 
 				extendable for your website in order to jumpstart front-end design.  
 				Using it is simple; all you need is one line of code, like so:
 			</p>
@@ -39,10 +39,11 @@
 			<p class="large">
 				Since Springboard changes the <em>defaults</em> of a 
 				webpage, you can simply include it and watch as the browser
-				styles are transformed.  As an example of what Springboard can
-				do, check out this webpage! It was built completely using Springboard.
-				Don't believe me? Check the source! Springboard is open-source,
-				and currently hosted on <a href="#">GitHub</a>.
+				styles are transformed.  Also, different page widths are supported
+				with responsive design, so your site will work on tablets and smartphones.
+				As an example of what Springboard can do, check out this webpage! 
+				It was built completely using Springboard. Don't believe me? Look at the 
+				source! Springboard is open-source, and currently hosted on <a href="#">GitHub</a>.
 			</p>
 			
 			<h2>Features</h2>
@@ -60,7 +61,7 @@
 				<h4>HTML5- and CSS3-Compliant</h4>
 				<p>
 					Take advantage of the modern features of the web with pretty CSS styles
-					and new HTML5 elements. Elements or styles not supported in earlier browsers
+					and HTML5 elements. Elements or styles not supported in earlier browsers
 					are handled automatically.
 				</p>
 			</div>
@@ -123,14 +124,14 @@
 					<td>Text Alignment</td>
 					<td>Left-justify, right-justify, or center text within a container</td>
 					<td>
-						<code class="small">&lt;div class=&quot;leftText&quot;&gt;</code>
+						<code class="small">&lt;div class=&quot;leftText&quot;&gt;</code> (or <code class="small">rightText</code> or <code class="small">centerText</code>)
 					</td>
 				</tr>
 				<tr>
 					<td>Float Alignment</td>
 					<td>Left-align or right-align elements as needed</td>
 					<td>
-						<code class="small">&lt;div class=&quot;floatLeft&quot;&gt;</code>
+						<code class="small">&lt;div class=&quot;floatLeft&quot;&gt;</code> (or <code class="small">floatRight</code>)
 					</td>
 				</tr>
 				<tr>
@@ -155,12 +156,32 @@
 					</td>
 				</tr>
 				<tr>
+					<td>Small Textfield</td>
+					<td>Decreases the size of a textfield</td>
+					<td>
+						<code class="small">&lt;input type=&quot;text&quot; class=&quot;smallField&quot; /&gt;</code>
+					</td>
+				</tr>
+				<tr>
 					<td>Section</td>
-					<td>Used for positioning <code class="small">div</code> elements side-by-side in a container</td>
+					<td>
+						Used for positioning <code class="small">div</code> elements side-by-side in a container.
+						Be sure to add the <code class="small">clear</code> class after positioning two sections
+						side-by-side to fix formatting.
+					</td>
 					<td>
 						<code class="small">&lt;div class=&quot;section&quot;&gt;</code>
 					</td>
 				</tr>
+				<tr>
+					<td>Footer</td>
+					<td>
+						Check the bottom of the page!
+					</td>
+					<td>
+						<code class="small">&lt;div class=&quot;footer&quot;&gt;</code>
+					</td>
+				</tr>			
 			</table>
 			
 			<h3>Styles by Type</h3>
@@ -287,10 +308,9 @@ dictum. Sed ultricies condimentum auctor. </pre>
 			<hr>
 			
 			<h3>Table</h3>
-			
-			<strong>Cities by population:</strong>
-			
+						
 			<table>
+				<caption>Cities by Population:</caption>
 				<tr>
 					<th>Rank</th>
 					<th>City</th>
@@ -326,7 +346,7 @@ dictum. Sed ultricies condimentum auctor. </pre>
 			<br />
 			
 			<p>
-				Additionally, you may add the <code class="small">alternating</code>
+				Add the <code class="small">alternating</code>
 				class to a table to give it a striped color, like so:
 			</p>
 			
@@ -379,7 +399,7 @@ dictum. Sed ultricies condimentum auctor. </pre>
 				<br />
 				
 				You can also change the color of buttons by adding
-				a class that is the name of that color.
+				one of the classes below.
 			</p>
 			
 			<table class="alternating">
@@ -445,9 +465,8 @@ dictum. Sed ultricies condimentum auctor. </pre>
 			<h3>Other Input Elements</h3>
 			
 			<p>
-				Apply the <code class="small">largeField</code> or 
-				<code class="small">smallField</code> class
-				to a textfield to make it bigger or smaller.
+				Apply the <code class="small">smallField</code> class
+				to a textfield to make it smaller.
 			</p>
 			
 			<table class="alternating">
@@ -460,11 +479,6 @@ dictum. Sed ultricies condimentum auctor. </pre>
 					<td>Small Text Input</td>
 					<td><input type="text" placeholder="Small text" class="smallField" /></td>
 					<td><input type="text" placeholder="Disabled" class="smallField" disabled /></td>
-				</tr>
-				<tr>
-					<td>Large Text Input</td>
-					<td><input type="text" placeholder="Large text" class="largeField" /></td>
-					<td><input type="text" placeholder="Disabled" class="largeField" disabled /></td>
 				</tr>
 				<tr>
 					<td>Password input</td>
@@ -574,12 +588,10 @@ dictum. Sed ultricies condimentum auctor. </pre>
 				<strong>Small Text, Superscript, and Subscript</strong>
 				<br />
 				<br />
-				Here is some <small>small</small> text.  Here is some superscript:
+				Here is some <small>small</small> text. Here is some superscript:
 				10<sup>7</sup>.  Here is some subscript: K<sub>b</sub>.
 			</p>
-			
-			<br />
-			
+						
 			<hr>
 			
 			<h3>Lists</h3>
@@ -613,14 +625,14 @@ dictum. Sed ultricies condimentum auctor. </pre>
 				<dt>Kenya</dt>
 				<dd>A country in Africa</dd>
 			</dl>
-			
-			<br />
-			
+						
 			<hr>
 			
 			<p>
-				Additionally if you haven't already noticed, there is 
-				a horizontal rule element.
+				And last but not least, you may have noticed that
+				horizontal rules have been used throughout this site.
+				Add the <code class="small">&lt;hr&gt;</code> tag for
+				a horizontal rule.
 			</p>
 												
 			<h2>License</h2>
@@ -658,6 +670,8 @@ dictum. Sed ultricies condimentum auctor. </pre>
 				OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 				SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			</p>
+			
+			<div class="footer">&copy; 2013 <a href="/">Jack Stone</a></div>
 						
 		</div>
 		
