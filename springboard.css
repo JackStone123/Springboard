@@ -1,0 +1,617 @@
+/*
+ * Springboard
+ * CSS defaults and utility classes designed to quickstart front-end web design
+ * 
+ * Copyright Jack Stone 2013
+ * 
+ * Released under the MIT License
+ * http://opensource.org/licenses/MIT
+ */
+
+/* Global defaults */
+
+html, body {
+	padding:1em;
+	margin:0;
+   	font-family:Helvetica, Arial, sans-serif; 
+   	font-size:1.1em;
+}
+
+/* Typical clearfix class */
+
+.clearfix:after {
+   	content:" ";
+   	visibility:hidden;
+   	display:block;
+   	height:0;
+   	clear:both;
+}
+
+/* Static container class */
+
+.container {
+    margin:0 auto;
+    max-width:960px;
+}
+
+/* Simple float classes */
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+/* 
+ * Workaround for floats on smaller
+ * screen width
+ */
+
+@media (max-width:985px) {
+	.floatLeft, .floatRight {
+		width:100% !important;
+	}
+}
+
+/* Simple text alignment classes */
+
+.centerText {
+	text-align:center;
+}
+
+.leftText {
+	text-align:left;
+}
+
+.rightText {
+	text-align:right;
+}
+
+/* Border class for divs, etc. */
+
+.border {
+	border:1px solid #BEBEBE;
+	border-radius:0.3em;
+	-moz-border-radius:0.3em;
+	-o-border-radius:0.3em;
+	-webkit-border-radius:0.3em;
+}
+
+/* Simple large and small text classes */
+
+.large {
+	font-size:1.4em !important;
+}
+
+.small {
+	font-size:0.7em !important;
+}
+
+/* Simple small text field class */
+
+.smallField {
+	height:15px;
+	max-width:150px !important;
+}
+
+/* 
+ * Section class for side-by-side containers 
+ * This class is meant to be modified
+ */
+
+.section {
+	height:auto;
+	width:450px;
+}
+
+/* Put an empty div with this class after two sections */
+
+.clear {
+	clear:both;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:bold;
+}
+
+h1 {
+	font-size:2.7em;
+}
+
+h2 {
+	font-size:2.2em;
+}
+
+h3 {
+	font-size:1.7em;
+}
+
+h4 {
+	font-size:1.2em;
+}
+
+h5 {
+	font-size:0.9em;
+}
+
+h6 {
+	font-size:0.7em;
+}
+
+/* Block-level elements */
+
+address {
+	font-style:normal;
+	line-height:150%;
+	text-align:left;
+}
+
+blockquote {
+	background:#F5F5F5;
+	text-align:left;
+	font-style:italic;
+	border-left:10px solid darkgrey;
+	padding:1.3em;
+	line-height:150%;
+}
+
+blockquote:before {
+	content:open-quote;
+	font-size:3em;
+	color:darkgrey;
+	margin-right:0.3em;
+	padding-top:0.2em;
+}
+
+blockquote p {
+	display:inline;
+	font-style:italic;
+}
+
+fieldset {
+	border:1px solid #A9A9A9;
+	border-radius:0.3em;
+	-moz-border-radius:0.3em;
+	-o-border-radius:0.3em;
+	-webkit-border-radius:0.3em;
+	padding:1.3em;
+}
+
+p {
+	line-height:130%;
+	font-weight:200;
+	text-align:left;
+}
+
+pre {
+	background:#F5F5F5;
+	border:1px solid lightgrey;
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size:1em;
+	padding:1em;
+	text-align:left;
+    height:auto;
+    white-space:pre-wrap;
+    white-space:-moz-pre-wrap;
+    white-space:-pre-wrap;
+    white-space:-o-pre-wrap;
+    word-wrap:break-word;
+    overflow:auto;
+    border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    -o-border-radius:0.3em;
+    -webkit-border-radius:0.3em;
+}
+
+/* Table elements */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+}
+
+caption {
+	border-bottom:1px solid #A9A9A9;
+	font-weight:bold;
+	padding-bottom:0.8em;
+}
+
+tr, th {
+	border-bottom:1px solid #A9A9A9;
+}
+
+tr {
+	font-weight:normal;
+}
+
+th {
+	font-weight:bold;
+}
+
+table.alternating tr:nth-child(even) {
+	background:#F5F5F5;
+}
+
+th, td {
+	padding:0.8em;
+}
+
+/* Input elements */
+
+input, select {
+	vertical-align:middle;
+}
+
+input[type="text"], input[type=password], textarea {
+    background-color:#FFFFFF;
+    border:1px solid #A9A9A9;
+    outline:none;
+    border-radius:0.2em;
+    -moz-border-radius:0.2em;
+    -o-border-radius:0.2em;
+    -webkit-border-radius:0.2em;  
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;   
+    padding:0.3em;
+    font-size:1em;
+    max-width:250px;  
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    -webkit-transition:all 0.3s;   
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:hover, input[type=password]:hover, textarea:hover, 
+input[type="text"].hover, input[type=password].hover, textarea.hover {
+    border:1px solid #7A7A7A;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus, input[type=password]:focus, textarea:focus, 
+input[type="text"].focus, input[type=password].focus, textarea.focus {
+	border:1px solid #3333FF;
+    box-shadow:inset 0 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:inset 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:inset 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:disabled, input[type=password]:disabled, textarea:disabled, 
+input[type="text"][disabled], input[type=password][disabled], textarea[disabled] {
+	background:#E5E5E5;
+}
+
+input[type="text"]:disabled:hover, input[type=password]:disabled:hover, textarea:disabled:hover, 
+input[type="text"][disabled]:hover, input[type=password][disabled]:hover, textarea[disabled]:hover,
+input[type="text"]:disabled.hover, input[type=password]:disabled.hover, textarea:disabled.hover, 
+input[type="text"][disabled].hover, input[type=password][disabled].hover, textarea[disabled].hover {
+	border:1px solid #A9A9A9;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button {
+    /* The gradients... */
+    background:#05ABE0;
+    background:linear-gradient(to bottom, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
+    background:-moz-linear-gradient(top, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
+    background:-ms-linear-gradient(top, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
+    background:-o-linear-gradient(top, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #87E0FD), color-stop(25%, #53CBF1), color-stop(50%, #05ABE0));
+    background:-webkit-linear-gradient(top, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
+    border:solid 2px #0076A3;
+    border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    -o-border-radius:0.3em;
+    -webkit-border-radius:0.3em;
+    font-size:1em;
+	padding:0.4em;
+	display:inline-block;
+	margin-right:5px;
+	margin-left:5px;  
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    color:white;
+    vertical-align:middle;
+    text-shadow:rgba(0, 0, 0, 0.7) 0px 2px 2px; 
+    box-shadow:inset 0 1px 1px white;
+    -moz-box-shadow:inset 0 1px 1px white;
+    -webkit-box-shadow:inset 0 1px 1px white;     
+    background-size:100% 200%;
+    -moz-background-size:100% 200%;
+    -o-background-size:100% 200%;
+    -webkit-background-size:100% 200%; 
+    -moz-transition:all 0.1s linear;
+    -o-transition:all 0.1s linear;
+    -webkit-transition:all 0.1s linear;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover,
+input[type="button"].hover, input[type="submit"].hover, input[type="reset"].hover, button.hover {
+    background-position:0 40% !important;
+    cursor:pointer;
+}
+
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, button:active,
+input[type="button"].active, input[type="submit"].active, input[type="reset"].active, button.active {  
+    -moz-transition:none;
+    -o-transition:none;
+    -webkit-transition:none;
+    box-shadow:inset 0 3px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:inset 0 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow:inset 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, button:disabled,
+input[type="button"][disabled], input[type="submit"][disabled], input[type="reset"][disabled], button[disabled] {
+	background:#9FE6FD;
+	color:white;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	opacity:.70;
+	filter:alpha(opacity=70);
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+input[type="button"]:disabled:hover, input[type="submit"]:disabled:hover, input[type="reset"]:disabled:hover, button:disabled:hover,
+input[type="button"][disabled]:hover, input[type="submit"][disabled]:hover, input[type="reset"][disabled]:hover, button[disabled]:hover,
+input[type="button"]:disabled.hover, input[type="submit"]:disabled.hover, input[type="reset"]:disabled.hover, button:disabled.hover, 
+input[type="button"][disabled].hover, input[type="submit"][disabled].hover, input[type="reset"][disabled].hover, button[disabled].hover {
+	background-position:0;
+	cursor:auto;
+}
+
+input[type="button"]:disabled:active, input[type="submit"]:disabled:active, input[type="reset"]:disabled:active, button:disabled:active {
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+/* Different-colored buttons */
+
+.white.white {
+	border:2px solid #B2B2B2;
+	background: #FFFFFF;
+	background:linear-gradient(to bottom, #FFFFFF 0%, #EAEAEA 25%, #D6D6D6 50%);
+	background:-moz-linear-gradient(top, #FFFFFF 0%, #EAEAEA 25%, #D6D6D6 50%);
+	background:-ms-linear-gradient(top, #FFFFFF 0%, #EAEAEA 25%, #D6D6D6 50%);
+	background:-o-linear-gradient(top, #FFFFFF 0%, #EAEAEA 25%, #D6D6D6 50%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(25%, #EAEAEA), color-stop(50%, #D6D6D6));
+	background:-webkit-linear-gradient(top, #FFFFFF 0%, #EAEAEA 25%, #D6D6D6 50%);
+	background-size:100% 200%;
+	color:grey;
+    text-shadow:white 0px 2px 2px; 
+    -moz-background-size:100% 200%;
+    -o-background-size:100% 200%;
+    -webkit-background-size:100% 200%; 
+}
+
+.white.white:disabled, .white.white[disabled] {
+	background:#D6D6D6;
+}
+
+.orange.orange {
+	border:2px solid #BF4619;
+	background: #FF7700;
+	background:linear-gradient(to bottom, #FFD0A8 0%, #FFAE68 25%, #FF7700 50%);
+	background:-moz-linear-gradient(top, #FFD0A8 0%, #FFAE68 25%, #FF7700 50%);
+	background:-ms-linear-gradient(top, #FFD0A8 0%, #FFAE68 25%, #FF7700 50%);
+	background:-o-linear-gradient(top, #FFD0A8 0%, #FFAE68 25%, #FF7700 50%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFD0A8), color-stop(25%, #FFAE68), color-stop(50%, #FF7700));
+	background:-webkit-linear-gradient(top, #FFD0A8 0%, #FFAE68 25%, #FF7700 50%);
+	background-size:100% 200%;
+    -moz-background-size:100% 200%;
+    -o-background-size:100% 200%;
+    -webkit-background-size:100% 200%; 
+}
+
+.orange.orange:disabled, .orange.orange[disabled] {
+	background:#FF6A33;
+}
+
+.red.red {
+	border:2px solid #B20000;
+	background: #FF0000;
+	background:linear-gradient(to bottom, #FFA8A8 0%, #FF6868 25%, #FF0000 50%);
+	background:-moz-linear-gradient(top, #FFA8A8 0%, #FF6868 25%, #FF0000 50%);
+	background:-ms-linear-gradient(top, #FFA8A8 0%, #FF6868 25%, #FF0000 50%);
+	background:-o-linear-gradient(top, #FFA8A8 0%, #FF6868 25%, #FF0000 50%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFA8A8), color-stop(25%, #FF6868), color-stop(50%, #FF0000));
+	background:-webkit-linear-gradient(top, #FFA8A8 0%, #FF6868 25%, #FF0000 50%);
+	background-size:100% 200%;
+    -moz-background-size:100% 200%;
+    -o-background-size:100% 200%;
+    -webkit-background-size:100% 200%; 
+}
+
+.red.red:disabled, .red.red[disabled] {
+	background:#FF4747;
+}
+
+.green.green {
+	border:2px solid #008A2E;
+	background: #00BA15;
+	background:linear-gradient(to bottom, #99D89D 0%, #53CC6D 25%, #00BA15 50%);
+	background:-moz-linear-gradient(top, #99D89D 0%, #53CC6D 25%, #00BA15 50%);
+	background:-ms-linear-gradient(top, #99D89D 0%, #53CC6D 25%, #00BA15 50%);
+	background:-o-linear-gradient(top, #99D89D 0%, #53CC6D 25%, #00BA15 50%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #99D89D), color-stop(25%, #53CC6D), color-stop(50%, #00BA15));
+	background:-webkit-linear-gradient(top, #99D89D 0%, #53CC6D 25%, #00BA15 50%);
+	background-size:100% 200%;
+    -moz-background-size:100% 200%;
+    -o-background-size:100% 200%;
+    -webkit-background-size:100% 200%; 
+}
+
+.green.green:disabled, .green.green[disabled] {
+	background:#66C266;
+}
+
+.yellow.yellow {
+	border:2px solid #BA9A19;
+	background: #FFC300;
+	background:linear-gradient(to bottom, #FFF5D6 0%, #FCDE92 25%, #FFC300 50%);
+	background:-moz-linear-gradient(top, #FFF5D6 0%, #FCDE92 25%, #FFC300 50%);
+	background:-ms-linear-gradient(top, #FFF5D6 0%, #FCDE92 25%, #FFC300 50%);
+	background:-o-linear-gradient(top, #FFF5D6 0%, #FCDE92 25%, #FFC300 50%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF5D6), color-stop(25%, #FCDE92), color-stop(50%, #FFC300));
+	background:-webkit-linear-gradient(top, #FFF5D6 0%, #FCDE92 25%, #FFC300 50%);
+	background-size:100% 200%;
+    -moz-background-size:100% 200%;
+    -o-background-size:100% 200%;
+    -webkit-background-size:100% 200%; 
+}
+
+.yellow.yellow:disabled, .yellow.yellow[disabled] {
+	background:#FFE066;
+}
+
+select {
+    border:1px solid #A9A9A9;
+    font-size:1.1em;
+    padding:0.2em;
+    border-radius:0.2em;
+    -moz-border-radius:0.3em;
+    -o-border-radius:0.3em;
+    -webkit-border-radius:0.2em;
+    max-width:250px;
+}
+
+/* Anchor element */
+
+a {
+    color:#0088CC;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#0088CC;
+}
+
+/* Inline elements */
+
+abbr {
+	border-bottom:1px dashed;
+}
+
+abbr:hover {
+	cursor:help;
+}
+
+b, strong {
+	font-weight:bold;
+}
+
+code, kbd, output, samp {
+	background:#F5F5F5;
+	border:1px solid lightgrey;
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size:1em;
+	padding:0.4em;
+	text-align:left;
+	line-height:110%;
+	display:inline-block;
+    border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    -o-border-radius:0.3em;
+    -webkit-border-radius:0.3em;
+    vertical-align:middle;
+    white-space:nowrap;
+}
+
+/* Quick fix for inline code/kbd/output */
+
+code.small, kbd.small, output.small {
+	padding-top:0.2em;
+	padding-bottom:0.2em;
+}
+
+/* 
+ * Workaround for word wrap on code 
+ * and smaller browser width
+*/
+
+@media (max-width:700px) {
+	code, kbd, output, samp {
+		white-space:normal;
+	}
+}
+
+del, s {
+	text-decoration:line-through;
+}
+
+em, i, cite {
+	font-style:italic;
+}
+
+label {
+	font-weight:200;
+	vertical-align:middle;
+	line-height:150%;
+}
+
+span {
+	font-weight:200;
+}
+
+u {
+	text-decoration:underline;
+}
+
+/* List/definition items */
+
+ul, ol {
+	font-weight:200;
+	text-align:left;
+	line-height:1.3em;
+}
+
+dl {
+	text-align:left;
+	line-height:150%;
+}
+
+dt {
+	font-weight:bold;
+}
+
+/* Horizontal rule element */
+
+hr {
+	background-color:transparent;
+	border:none;
+	border-bottom:1px solid #BEBEBE;
+}
+
+/* 
+ * HTML 5 elements -- rendered
+ * as block-level for browsers that don't
+ * yet support them
+ */
+
+article, aside, footer, header, hgroup, menu, nav, section, figcaption, figure {
+	display:block;
+}
+
+/* Footer */
+
+.footer {
+	border-top:1px solid #A9A9A9;
+	font-weight:200;
+	text-align:center;
+	margin:0 auto;
+	padding:1em;
+}
