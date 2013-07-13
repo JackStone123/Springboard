@@ -21,16 +21,16 @@
 			<hr>
 			
 			<p class="large">
-				Springboard is an extremely lightweight CSS boilerplate that 
-				provides you with simple and nice-looking defaults which are easily 
-				extendable for your website in order to jumpstart front-end design.  
-				Using it is simple; all you need is one line of code, like so:
+				Springboard is a collection of extremely lightweight CSS defaults
+				and utility classes, easily extendable for your website, that will 
+				help jumpstart front-end design.  Using it is simple; all you need
+				is one line of code, like so:
 			</p>
 						
 			<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/path/to/springboard.css&quot; /&gt;</code>
 			
 			<p class="large">
-				Additionally, Springboard requires an HTML5 doctype at the 
+				Springboard requires a HTML5 doctype at the 
 				top of the page:
 			</p>
 			
@@ -38,12 +38,13 @@
 			
 			<p class="large">
 				Since Springboard changes the <em>defaults</em> of a 
-				webpage, you can simply include it and watch as the browser
+				webpage, you can simply include the CSS file and watch as the browser
 				styles are transformed.  Also, different page widths are supported
 				with responsive design, so your site will work on tablets and smartphones.
-				As an example of what Springboard can do, check out this webpage! 
-				It was built completely using Springboard. Don't believe me? Look at the 
-				source! Springboard is open-source, and currently hosted on <a href="#">GitHub</a>.
+				Check out this webpage, built completely using Springboard, as an example.
+				Don't believe me? Look at the source! Springboard is currently
+				hosted on <a href="https://github.com/JackStone123/Springboard">GitHub</a>.  The always up-to-date CSS file can be found
+				here:
 			</p>
 			
 			<h2>Features</h2>
@@ -61,7 +62,7 @@
 				<h4>HTML5- and CSS3-Compliant</h4>
 				<p>
 					Take advantage of the modern features of the web with pretty CSS styles
-					and HTML5 elements. Elements or styles not supported in earlier browsers
+					and HTML5 elements. Moreover, those not supported in earlier browsers
 					are handled automatically.
 				</p>
 			</div>
@@ -69,13 +70,12 @@
 			<div class="clear"></div>
 
 			<div class="floatLeft section">
-				<h4>Simple, Beautiful and Expandable</h4>
+				<h4>Simple, Beautiful, and Expandable</h4>
 				<p>
-					Springboard was carefully built on the principles of clean and simple
-					design, and will transform any webpage as such.  If you don't like an element,
-					it's easy to change it in the source.  And, since Springboard was designed
-					to be modified, you can change its default styles to your liking, or add new
-					ones.
+					Springboard was carefully crafted to be clean and simple in its design.
+					If you don't like an element, it's easy to change it in the source.  
+					And, since Springboard was designed to be modified, you can also change its 
+					default styles to your liking, or add new ones.
 				</p>
 			</div>
 			
@@ -83,7 +83,7 @@
 				<h4>Utility Classes</h4>
 				<p>
 					Want your text left-aligned, or your button to be larger? Just add the class to
-					the corresponding HTML element.  Springboard contains preset classes that are commonly used
+					the corresponding HTML element.  Springboard contains preset classes commonly used
 					in web development so that you won't have to code them yourself.
 				</p>
 			</div>
@@ -95,9 +95,9 @@
 			<h3>Utility Classes</h3>
 			
 			<p>
-				These are not CSS defaults, but classes that are commonly
-				used in web development.  They are easily extendable, but
-				still work well if used without edits.
+				These are not CSS defaults, but classes that are often found
+				in web development.  They are easily extendable, but
+				still work well without edits.
 			</p>
 			
 			<table class="alternating">
@@ -108,7 +108,7 @@
 				</tr>
 				<tr>
 					<td>Container</td>
-					<td>A collapsible, centered container class with a width of 960 pixels</td>
+					<td>A collapsible, centered container class with a max width of 960 pixels</td>
 					<td>
 						<code class="small">&lt;div class=&quot;container&quot;&gt;</code>
 					</td>
@@ -136,21 +136,21 @@
 				</tr>
 				<tr>
 					<td>Border</td>
-					<td>This adds a rounded-corner border to an element</td>
+					<td>Adds a rounded-corner border to an element</td>
 					<td>
 						<code class="small">&lt;div class=&quot;border&quot;&gt;</code>
 					</td>
 				</tr>
 				<tr>
 					<td>Large Text</td>
-					<td>Increases the font size, which will also increase the size of elements like buttons</td>
+					<td>Increases the font size, also increasing the size of elements like buttons</td>
 					<td>
 						<code class="small">&lt;div class=&quot;large&quot;&gt;</code>
 					</td>
 				</tr>
 				<tr>
 					<td>Small Text</td>
-					<td>Decreases the font size, which will also decrease the size of elements like buttons</td>
+					<td>Decreases the font size, also decreasing the size of elements like buttons</td>
 					<td>
 						<code class="small">&lt;div class=&quot;small&quot;&gt;</code>
 					</td>
@@ -166,11 +166,14 @@
 					<td>Section</td>
 					<td>
 						Used for positioning <code class="small">div</code> elements side-by-side in a container.
-						Be sure to add the <code class="small">clear</code> class after positioning two sections
-						side-by-side to fix formatting.
+						Be sure to add the <code class="small">clear</code> class after every two sections to fix
+						formatting.					
 					</td>
 					<td>
-						<code class="small">&lt;div class=&quot;section&quot;&gt;</code>
+						<code class="small">&lt;div class=&quot;section floatLeft&quot;&gt;</code>
+						<br />
+						<br />
+						<code class="small">&lt;div class=&quot;section floatRight&quot;&gt;</code>
 					</td>
 				</tr>
 				<tr>
@@ -198,10 +201,10 @@
 			<h3>Block-Level Elements</h3>
 			
 			<p>
-				For browsers that do not support certain HTML5 items
+				Earlier browsers do not support HTML5 items
 				such as <code class="small">aside</code> and 
-				<code class="small">footer</code>, they are simply rendered
-				as block elements.
+				<code class="small">footer</code>, so they are 
+				simply rendered as block elements.
 			</p>
 						
 			<hr>
@@ -280,7 +283,7 @@
 				In addition to pre-formatted text, you may use
 				a <code class="small">&lt;pre&gt;</code> for
 				multiline code snippets if you do not wish to
-				add a linebreak after each semicolon for the normal
+				add a linebreak after each semicolon with the normal
 				<code class="small">&lt;code&gt;</code> element.
 			</p>
 			
@@ -392,12 +395,9 @@ dictum. Sed ultricies condimentum auctor. </pre>
 			<p>
 				Apply the <code class="small">large</code> or
 				<code class="small">small</code> class 
-				to a button to make it bigger or
-				smaller.
-				
+				to a button to change its size.				
 				<br />
 				<br />
-				
 				You can also change the color of buttons by adding
 				one of the classes below.
 			</p>
@@ -481,12 +481,12 @@ dictum. Sed ultricies condimentum auctor. </pre>
 					<td><input type="text" placeholder="Disabled" class="smallField" disabled /></td>
 				</tr>
 				<tr>
-					<td>Password input</td>
+					<td>Password Input</td>
 					<td><input type="password" placeholder="Password" /></td>
 					<td><input type="password" placeholder="Disabled" disabled /></td>
 				</tr>
 				<tr>
-					<td>Textarea</td>
+					<td>Text Area</td>
 					<td><textarea placeholder="Textarea"></textarea></td>
 					<td><textarea disabled placeholder="Disabled"></textarea></td>
 				</tr>		
@@ -555,9 +555,8 @@ dictum. Sed ultricies condimentum auctor. </pre>
 				<strong>Code</strong>
 				<br />
 				<br />
-				As explained above, when using multiline code snippets
-				use <code class="small">&lt;pre&gt;</code>; else use
-				either <code class="small">&lt;code&gt;</code>, 
+				Use <code class="small">&lt;pre&gt;</code> for multiline code snippets;
+				otherwise use <code class="small">&lt;code&gt;</code>, 
 				<code class="small">&lt;kbd&gt;</code>, <code class="small">&lt;samp&gt;</code> or
 				<code class="small">&lt;output&gt;</code>.  For smaller
 				inline code snippets, add the <code class="small">small</code>
@@ -569,16 +568,16 @@ dictum. Sed ultricies condimentum auctor. </pre>
 			<h3>Emphasis Elements</h3>
 			
 			<p>
-				Here is some <strong>bold</strong> text.
+				Here is <strong>bold</strong> text.
 				<br />
 				<br />
-				Here is some <em>italicized</em> text.
+				Here is <em>italicized</em> text.
 				<br />
 				<br />
-				Here is some <ins>underlined</ins> text.
+				Here is <ins>underlined</ins> text.
 				<br />
 				<br />
-				Here is some text with a <del>strikethrough</del>.
+				Here is text with a <del>strikethrough</del>.
 				<br />
 				<br />
 				You may also highlight text like <mark>this</mark> (not supported in IE 8 and below).
@@ -588,8 +587,8 @@ dictum. Sed ultricies condimentum auctor. </pre>
 				<strong>Small Text, Superscript, and Subscript</strong>
 				<br />
 				<br />
-				Here is some <small>small</small> text. Here is some superscript:
-				10<sup>7</sup>.  Here is some subscript: K<sub>b</sub>.
+				Here is <small>small</small> text. Here is superscript:
+				10<sup>7</sup>.  Here is subscript: K<sub>b</sub>.
 			</p>
 						
 			<hr>
