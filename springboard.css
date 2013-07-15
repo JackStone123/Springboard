@@ -46,7 +46,7 @@ html, body {
 
 /*
  * Workaround for floats on smaller
- * screen width
+ * screen widths
  */
 
 @media (max-width: 985px) {
