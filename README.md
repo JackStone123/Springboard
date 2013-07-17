@@ -14,7 +14,7 @@ Since Springboard changes the *defaults* of a webpage, you can simply include th
 Support
 -------
 
-Are you having trouble? Open an [issue](https://github.com/JackStone123/Springboard/issues "Issue") and I'll get back to you as soon as I can.
+Are you having trouble? Open an [issue](https://github.com/JackStone123/Springboard/issues/new "Issue") and I'll get back to you as soon as I can.
 
 License
 -------
