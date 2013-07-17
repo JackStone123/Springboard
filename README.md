@@ -3,7 +3,7 @@
 
 Springboard is a collection of extremely lightweight CSS defaults and utility classes, easily extendable for your website, that will help jumpstart front-end design. Using it is simple; all you need is one line of code, like so:
 
-`<link rel="stylesheet" type="text/css" href="/path/to/springboard.css" />`
+`<link rel="stylesheet" type="text/css" href="/path/to/springboard.min.css" />`
 
 Springboard requires a HTML5 doctype at the top of the page:
 
