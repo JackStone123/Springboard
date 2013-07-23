@@ -223,6 +223,7 @@ caption {
 
 tr, th {
 	border-bottom: 1px solid #A9A9A9;
+	text-align:left;
 }
 
 tr {
