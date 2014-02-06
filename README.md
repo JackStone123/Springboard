@@ -21,7 +21,7 @@ Are you having trouble? Open an [issue](https://github.com/JackStoneDev/Springbo
 License
 -------
 
-Copyright 2013 [Jack Stone](http://jackstonedev.com "Jack Stone").
+Copyright (c) 2013 [Jack Stone](http://jackstonedev.com "Jack Stone").
 
 Springboard is licensed under an MIT license. Credit is by no means required, but if you do use Springboard feel free to shoot me an [email](mailto:jack@jackstonedev.com "Email"). I'd love to see it in action. 
 
