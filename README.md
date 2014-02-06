@@ -1,7 +1,7 @@
 Springboard
 ===========
 
-##[Live Demo](http://jackstonedev.com/portfolio/springboard "Springboard")
+## [Live Demo](http://jackstonedev.com/portfolio/springboard/ "Springboard")
 
 Springboard is a collection of extremely lightweight CSS defaults and utility classes, easily extendable for your website, that will help jumpstart front-end design. Using it is simple; all you need is one line of code, like so:
 
