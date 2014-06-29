@@ -1,10 +1,10 @@
 /*
  * Springboard
- * CSS defaults and utility classes designed to quickstart front-end web design.
+ * CSS defaults and utility classes designed to quickstart front-end web design
  *
- * Copyright (c) Jack Stone 2013.
+ * Copyright Jack Stone 2013
  *
- * Released under the MIT License.
+ * Released under the MIT License
  * http://opensource.org/licenses/MIT
  */
 
@@ -269,8 +269,8 @@ input[type="text"], input[type=password], textarea {
 	-o-border-radius: 0.2em;
 	-webkit-border-radius: 0.2em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: 0.3em;
-	font-size: 1em;
+	padding: 0.5em;
+	font-size: 0.9em;
 	max-width: 250px;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -281,14 +281,14 @@ input[type="text"], input[type=password], textarea {
 }
 
 input[type="text"]:hover, input[type=password]:hover, textarea:hover, input[type="text"].hover, input[type=password].hover, textarea.hover {
-	border: 1px solid #7A7A7A;
+	border: 1px solid #66AFE9;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 input[type="text"]:focus, input[type=password]:focus, textarea:focus, input[type="text"].focus, input[type=password].focus, textarea.focus {
-	border: 1px solid #3333FF;
+	border: 1px solid #5C9ED2;
 	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
@@ -307,6 +307,116 @@ input[type="text"]:disabled:hover, input[type=password]:disabled:hover, textarea
 
 input[type="button"], input[type="submit"], input[type="reset"], button {
 	/* The gradients... */
+	background: #05ABE0;
+	border: solid 2px #0076A3;
+	border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	font-size: 1em;
+	padding: 0.4em;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: white;
+	vertical-align: middle;
+	background-size: 100% 200%;
+	-moz-background-size: 100% 200%;
+	-o-background-size: 100% 200%;
+	-webkit-background-size: 100% 200%;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, input[type="button"].hover, input[type="submit"].hover, input[type="reset"].hover, button.hover {
+	background: #049ACA;
+	cursor: pointer;
+}
+
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, button:active, input[type="button"].active, input[type="submit"].active, input[type="reset"].active, button.active {
+	-moz-transition: none;
+	-o-transition: none;
+	-webkit-transition: none;
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, button:disabled, input[type="button"][disabled], input[type="submit"][disabled], input[type="reset"][disabled], button[disabled] {
+	background: #9FE6FD;
+	color: white;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	opacity: .70;
+	filter: alpha(opacity=70);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+input[type="button"]:disabled:hover, input[type="submit"]:disabled:hover, input[type="reset"]:disabled:hover, button:disabled:hover, input[type="button"][disabled]:hover, input[type="submit"][disabled]:hover, input[type="reset"][disabled]:hover, button[disabled]:hover, input[type="button"]:disabled.hover, input[type="submit"]:disabled.hover, input[type="reset"]:disabled.hover, button:disabled.hover, input[type="button"][disabled].hover, input[type="submit"][disabled].hover, input[type="reset"][disabled].hover, button[disabled].hover {
+	background-position: 0;
+	cursor: auto;
+}
+
+input[type="button"]:disabled:active, input[type="submit"]:disabled:active, input[type="reset"]:disabled:active, button:disabled:active {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/* Different-colored buttons */
+
+.white.white {
+    border: 2px solid #CCCCCC;
+    background: #FFFFFF;
+    color: #666666;
+}
+
+.white.white:hover {
+    background: #E6E6E6;
+}
+
+.orange.orange {
+	border: 2px solid #BF4619;
+	background: #FF7700;
+}
+
+.orange.orange:hover {
+    background: #CC5F00;
+}
+
+.red.red {
+    border: 2px solid #B20000;
+	background: #FF0000;
+}
+
+.red.red:hover {
+    background: #B20000;
+}
+
+.green.green {
+	border: 2px solid #008A2E;
+	background: #00BA15;
+}
+
+.green.green:hover {
+    background: #009511;
+}
+
+.yellow.yellow {
+    border: 2px solid #BA9A19;
+	background: #FFC300;
+}
+
+.yellow.yellow:hover {
+    background: #CC9C00;
+}
+
+/* Different-colored inset buttons */
+
+.inset.inset {
 	background: #05ABE0;
 	background: linear-gradient(to bottom, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
 	background: -moz-linear-gradient(top, #87E0FD 0%, #53CBF1 25%, #05ABE0 50%);
@@ -340,12 +450,12 @@ input[type="button"], input[type="submit"], input[type="reset"], button {
 	-webkit-transition: all 0.1s linear;
 }
 
-input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, input[type="button"].hover, input[type="submit"].hover, input[type="reset"].hover, button.hover {
+.inset.inset:hover {
 	background-position: 0 40% !important;
 	cursor: pointer;
 }
 
-input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, button:active, input[type="button"].active, input[type="submit"].active, input[type="reset"].active, button.active {
+.inset.inset:active {
 	-moz-transition: none;
 	-o-transition: none;
 	-webkit-transition: none;
@@ -354,7 +464,7 @@ input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:ac
 	-webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, button:disabled, input[type="button"][disabled], input[type="submit"][disabled], input[type="reset"][disabled], button[disabled] {
+.inset.inset:disabled, .inset.inset[disabled] {
 	background: #9FE6FD;
 	color: white;
 	box-shadow: none;
@@ -365,20 +475,7 @@ input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
 
-input[type="button"]:disabled:hover, input[type="submit"]:disabled:hover, input[type="reset"]:disabled:hover, button:disabled:hover, input[type="button"][disabled]:hover, input[type="submit"][disabled]:hover, input[type="reset"][disabled]:hover, button[disabled]:hover, input[type="button"]:disabled.hover, input[type="submit"]:disabled.hover, input[type="reset"]:disabled.hover, button:disabled.hover, input[type="button"][disabled].hover, input[type="submit"][disabled].hover, input[type="reset"][disabled].hover, button[disabled].hover {
-	background-position: 0;
-	cursor: auto;
-}
-
-input[type="button"]:disabled:active, input[type="submit"]:disabled:active, input[type="reset"]:disabled:active, button:disabled:active {
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-}
-
-/* Different-colored buttons */
-
-.white.white {
+.inset-white.inset-white {
 	border: 2px solid #B2B2B2;
 	background: #FFFFFF;
 	background: linear-gradient(to bottom, #FFFFFF 0%, #EAEAEA 25%, #D6D6D6 50%);
@@ -395,11 +492,12 @@ input[type="button"]:disabled:active, input[type="submit"]:disabled:active, inpu
 	-webkit-background-size: 100% 200%;
 }
 
-.white.white:disabled, .white.white[disabled] {
+.white.white:disabled, .white.white[disabled], .inset-white.inset-white:disabled, .inset-white.inset-white[disabled] {
 	background: #D6D6D6;
+	text-shadow: none;
 }
 
-.orange.orange {
+.inset-orange.inset-orange {
 	border: 2px solid #BF4619;
 	background: #FF7700;
 	background: linear-gradient(to bottom, #FFD0A8 0%, #FFAE68 25%, #FF7700 50%);
@@ -414,11 +512,11 @@ input[type="button"]:disabled:active, input[type="submit"]:disabled:active, inpu
 	-webkit-background-size: 100% 200%;
 }
 
-.orange.orange:disabled, .orange.orange[disabled] {
+.orange.orange:disabled, .orange.orange[disabled], .inset-orange.inset-orange:disabled, .inset-orange.inset-orange[disabled] {
 	background: #FF6A33;
 }
 
-.red.red {
+.inset-red.inset-red {
 	border: 2px solid #B20000;
 	background: #FF0000;
 	background: linear-gradient(to bottom, #FFA8A8 0%, #FF6868 25%, #FF0000 50%);
@@ -433,11 +531,11 @@ input[type="button"]:disabled:active, input[type="submit"]:disabled:active, inpu
 	-webkit-background-size: 100% 200%;
 }
 
-.red.red:disabled, .red.red[disabled] {
+.red.red:disabled, .red.red[disabled], .inset-red.inset-red:disabled, .inset-red.inset-red[disabled] {
 	background: #FF4747;
 }
 
-.green.green {
+.inset-green.inset-green {
 	border: 2px solid #008A2E;
 	background: #00BA15;
 	background: linear-gradient(to bottom, #99D89D 0%, #53CC6D 25%, #00BA15 50%);
@@ -452,11 +550,11 @@ input[type="button"]:disabled:active, input[type="submit"]:disabled:active, inpu
 	-webkit-background-size: 100% 200%;
 }
 
-.green.green:disabled, .green.green[disabled] {
+.green.green:disabled, .green.green[disabled], .inset-green.inset-green:disabled, .inset-green.inset-green[disabled] {
 	background: #66C266;
 }
 
-.yellow.yellow {
+.inset-yellow.inset-yellow {
 	border: 2px solid #BA9A19;
 	background: #FFC300;
 	background: linear-gradient(to bottom, #FFF5D6 0%, #FCDE92 25%, #FFC300 50%);
@@ -471,7 +569,7 @@ input[type="button"]:disabled:active, input[type="submit"]:disabled:active, inpu
 	-webkit-background-size: 100% 200%;
 }
 
-.yellow.yellow:disabled, .yellow.yellow[disabled] {
+.yellow.yellow:disabled, .yellow.yellow[disabled], .inset-yellow.inset-yellow:disabled, .inset-yellow.inset-yellow[disabled] {
 	background: #FFE066;
 }
 
