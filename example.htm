@@ -11,9 +11,30 @@
 		<meta name="description" content="A collection of extremely lightweight CSS defaults and utility classes, easily extendable for your website, that will help jumpstart front-end design." />
         <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7" />
 		
-		<link rel="stylesheet" type="text/css" href="./resources/css/springboard.min.css" />
-		<link rel="icon" type="image/png" href="./resources/images/springboardicon.png" />
-		<link rel="apple-touch-icon-precomposed" href="./resources/images/springboardicon.png"/>
+		<link rel="stylesheet" type="text/css" href="/resources/css/springboard1.css" />
+		<link rel="icon" type="image/png" href="/resources/images/springboardicon.png" />
+		<link rel="apple-touch-icon-precomposed" href="/resources/images/springboardicon.png"/>
+		
+		<script type="text/javascript">
+        
+            var _gaq = _gaq || [];
+            _gaq.push([
+                '_setAccount', 'UA-27937406-1'
+            ]);
+            _gaq.push(['_trackPageview']);
+            
+            (function () {
+            
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            
+            })();
+            
+        </script>
 		
 	</head>
 	
@@ -21,7 +42,7 @@
 		
 		<div class="container leftText">
 			
-			<a href="../" class="large">&larr; Back</a>
+			<a href="/" class="large">&larr; Back</a>
 			
 			<h1>Springboard</h1>
 
@@ -50,7 +71,7 @@
 				with responsive design, so your site will work on tablets and smartphones.
 				Check out this webpage, built completely using Springboard, as an example.
 				Don't believe me? Look at the source! Springboard is currently
-				hosted on <a href="https://github.com/JackStone123/Springboard">GitHub</a>. 
+				hosted on <a href="https://github.com/JackStoneDev/Springboard">GitHub</a>. 
 			</p>
 			
 			<h2>Features</h2>
@@ -451,6 +472,53 @@ dictum. Sed ultricies condimentum auctor. </pre>
 					<td><button type="button" class="yellow" disabled>Yellow Button</button></td>
 					<td><code>yellow</code></td>
 				</tr>
+			</table>
+			
+			<h2>Inset Buttons</h2>
+			
+			<table class="alternating">
+				<tr>
+					<th>Button Type</th>
+					<th>Button</th>
+					<th>Disabled</th>
+					<th>Class</th>
+				</tr>
+				<tr>
+					<td>Normal Inset Button</td>
+					<td><button type="button" class="inset">Normal Inset Button</button></td>
+					<td><button type="button" class="inset" disabled>Disabled Button</button></td>
+					<td><code>inset</code></td>
+				</tr>
+				<tr>
+					<td>White Inset Button</td>
+					<td><button type="button" class="inset inset-white">White Button</button></td>
+					<td><button type="button" class="inset inset-white" disabled>Disabled Button</button></td>
+					<td><code>inset inset-white</code></td>
+				</tr>				
+				<tr>
+					<td>Orange Inset Button</td>
+					<td><button type="button" class="inset inset-orange">Orange Inset Button</button></td>
+					<td><button type="button" class="inset inset-orange" disabled>Disabled Button</button></td>
+					<td><code>inset inset-orange</code></td>
+				</tr>				
+				<tr>
+					<td>Red Inset Button</td>
+					<td><button type="button" class="inset inset-red">Red Inset Button</button></td>
+					<td><button type="button" class="inset inset-red" disabled>Disabled Button</button></td>
+					<td><code>inset inset-red</code></td>
+				</tr>
+				<tr>
+					<td>Green Inset Button</td>
+					<td><button type="button" class="inset inset-green">Green Inset Button</button></td>
+					<td><button type="button" class="inset inset-green" disabled>Green Button</button></td>
+					<td><code>inset inset-green</code></td>
+				</tr>
+				<tr>
+					<td>Yellow Inset Button</td>
+					<td><button type="button" class="inset inset-yellow">Yellow Inset Button</button></td>
+					<td><button type="button" class="inset inset-yellow" disabled>Yellow Button</button></td>
+					<td><code>inset inset-yellow</code></td>
+				</tr>			
 			</table>
 			
 			<h4>Sizes</h4>
