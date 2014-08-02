@@ -202,7 +202,7 @@ p {
 pre {
 	background: #F5F5F5;
 	border: 1px solid lightgrey;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 	font-size: 1em;
 	padding: 1em;
 	text-align: left;
@@ -616,7 +616,7 @@ b, strong {
 code, kbd, output, samp {
 	background: #F5F5F5;
 	border: 1px solid lightgrey;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 	font-size: 1em;
 	padding: 0.4em;
 	text-align: left;
